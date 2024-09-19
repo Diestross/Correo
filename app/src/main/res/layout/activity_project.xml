@@ -1,0 +1,64 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ProjectActivity">
+
+    <EditText
+        android:id="@+id/locationField"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Locacion"
+        android:inputType="text"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_margin="16dp"/>
+
+    <EditText
+        android:id="@+id/projectNameField"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Nombre del proyecto"
+        android:inputType="text"
+        app:layout_constraintTop_toBottomOf="@id/locationField"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_margin="16dp"/>
+
+    <EditText
+        android:id="@+id/projectDescriptionField"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:hint="Descripcion"
+        android:inputType="textMultiLine"
+        android:gravity="top"
+        app:layout_constraintTop_toBottomOf="@id/projectNameField"
+        app:layout_constraintBottom_toTopOf="@id/publishButton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_margin="16dp"/>
+
+    <Button
+        android:id="@+id/publishButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:text="Publicar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/projectNameField" />
+
+    <Button
+        android:id="@+id/goToEmailForm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ir al e-mail"
+        app:layout_constraintTop_toBottomOf="@id/publishButton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_margin="16dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
