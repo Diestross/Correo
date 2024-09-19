@@ -32,6 +32,7 @@ public class ProjectActivity extends AppCompatActivity {
             }
         });
 
+
         goToEmailForm.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
